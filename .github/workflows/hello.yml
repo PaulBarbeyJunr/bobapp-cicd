@@ -1,0 +1,21 @@
+name: Hello CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v4
+
+      - name: Message de bienvenue
+        run: echo "Le workflow BobApp est en place"
+
+      - name: Lister les fichiers
+        run: ls -la
