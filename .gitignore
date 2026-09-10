@@ -23,6 +23,7 @@ coverage/
 *.ipr
 
 
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
